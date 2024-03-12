@@ -1,0 +1,7 @@
+.header {
+  margin-top: 45px;
+  width: 100%;
+  border-bottom: solid rgba(84, 84, 84, 0.7) 1px;
+  box-sizing: border-box;
+  padding-bottom: 36px;
+}

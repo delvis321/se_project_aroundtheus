@@ -1,0 +1,11 @@
+.page {
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+
+.page__content {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0 19px;
+}
