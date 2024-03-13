@@ -6,8 +6,8 @@
 - Figma
 - Images
 - Link to video overview
-
-**Intro**
+- Link to project
+  **Intro**
 
 This project is a website for users to create a profile and share pictures for others to see and like. The project was created using HTML and CSS. Media queries were also used so the page can be viewed on mulitple screen sizes.
 
@@ -24,3 +24,7 @@ Good luck and have fun!
 **Link to video overview**
 
 Link: https://drive.google.com/file/d/1UTOdZDAz99WsqWlecQeGT2yffB7FoPmy/view?usp=sharing
+
+**GitHub Pages**
+
+Link: https://delvis321.github.io/se_project_aroundtheus/
