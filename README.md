@@ -21,16 +21,6 @@ The way you'll do this at work is by exporting images directly from Figma — we
 
 Good luck and have fun!
 
-_Desktop 1280px_
-
-![alt text](../Readme/aroundtheus1280.png)
-
-_Tablet 775px_
-
-![alt text](../Readme/aroundtheus775.png)
-
-_Mobile 320px_
-
-![alt text](../Readme/aroundtheus320.png)
-
 **Link to video overview**
+
+Link: https://drive.google.com/file/d/1UTOdZDAz99WsqWlecQeGT2yffB7FoPmy/view?usp=sharing
