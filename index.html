@@ -40,7 +40,11 @@
               Explorer
             </p>
           </div>
-          <button class="profile__add-button" type="button"></button>
+          <button
+            class="profile__add-button"
+            id="add-card-button"
+            type="button"
+          ></button>
         </section>
         <section class="cards">
           <ul class="cards__list"></ul>
@@ -55,7 +59,7 @@
       <div class="modal__container">
         <button class="modal__close" id="modal-edit-close"></button>
         <h2 class="modal__heading">Edit profile</h2>
-        <form class="modal__form">
+        <form class="modal__form" id="profile-edit-form">
           <input
             class="modal__input"
             type="text"
@@ -69,6 +73,30 @@
             name="description"
             placeholder="Description"
             id="profile-description-input"
+          />
+          <button class="modal__button" type="submit">Save</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" id="add-card-modal">
+      <div class="modal__container">
+        <button class="modal__close" id="add-card-close"></button>
+        <h2 class="modal__heading">New Place</h2>
+        <form class="modal__form" id="add-card-form">
+          <input
+            class="modal__input"
+            type="text"
+            name="title"
+            placeholder="Title"
+            id="title-add-input"
+          />
+          <input
+            class="modal__input"
+            type="text"
+            name="url"
+            placeholder="Image URL"
+            id="url-add-input"
           />
           <button class="modal__button" type="submit">Save</button>
         </form>
