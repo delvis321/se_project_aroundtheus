@@ -43,6 +43,10 @@ const addCardClose = document.querySelector("#add-card-close");
 const addCardForm = document.querySelector("#add-card-form");
 const addCardTitleInput = document.querySelector("#title-add-input");
 const addCardUrlInput = document.querySelector("#url-add-input");
+const previewModal = document.querySelector("#preview-modal");
+const previewClose = document.querySelector("#preview-close-modal");
+const previewImage = document.querySelector("#preview-image-modal");
+const previewTitle = document.querySelector("#preview-title-modal");
 const cardListEl = document.querySelector(".cards__list");
 const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
@@ -61,9 +65,25 @@ function getCardElement(cardData) {
   const cardElement = cardTemplate.cloneNode(true);
   const cardImageEl = cardElement.querySelector(".card__image");
   const cardTitleEl = cardElement.querySelector(".card__title");
+  const likeButton = cardElement.querySelector(".card__like-button");
+  const deleteButton = cardElement.querySelector(".card__delete-button");
+
+  cardImageEl.addEventListener("click", () => {
+    previewImage.src = cardData.link;
+    previewImage.alt = cardData.link;
+    previewTitle.textContent = cardData.name;
+    openModal(previewModal);
+  });
+  likeButton.addEventListener("click", () => {
+    likeButton.classList.toggle("card__like-button_active");
+  });
+  deleteButton.addEventListener("click", () => {
+    cardElement.remove();
+  });
   cardImageEl.src = cardData.link;
   cardImageEl.alt = cardData.name;
   cardTitleEl.textContent = cardData.name;
+
   return cardElement;
 }
 
@@ -103,7 +123,7 @@ modalEditClose.addEventListener("click", () => {
 
 addCardButton.addEventListener("click", () => openModal(addCardModal));
 addCardClose.addEventListener("click", () => closeModal(addCardModal));
-
+previewClose.addEventListener("click", () => closeModal(previewModal));
 profileEditForm.addEventListener("submit", handleProfileEditSubmit);
 addCardForm.addEventListener("submit", handleAddCardSubmit);
 

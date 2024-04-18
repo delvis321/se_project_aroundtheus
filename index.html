@@ -98,13 +98,22 @@
             placeholder="Image URL"
             id="url-add-input"
           />
-          <button class="modal__button" type="submit">Save</button>
+          <button class="modal__button" type="submit">Create</button>
         </form>
+      </div>
+    </div>
+
+    <div class="modal-preview" id="preview-modal">
+      <div class="modal-preview__container">
+        <button class="modal-preview__close" id="preview-close-modal"></button>
+        <img class="modal-preview__image" id="preview-image-modal" />
+        <h3 class="modal-preview__title" id="preview-title-modal"></h3>
       </div>
     </div>
 
     <template id="card-template">
       <li class="card">
+        <button class="card__delete-button" type="button"></button>
         <img class="card__image" src="" alt="" />
         <div class="card__description">
           <h2 class="card__title"></h2>
